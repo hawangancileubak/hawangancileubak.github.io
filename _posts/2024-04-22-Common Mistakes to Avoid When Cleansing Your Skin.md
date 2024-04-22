@@ -7,6 +7,7 @@ categories: [blog]
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha9E-guLRJydcLv_OMdP-yWW_4vCTgj1_XGgfyqnEFIO3v90GgWM9nKlsuJi5VFHAm6T6xkqHVxCggnuwJ4YUH3zwa6GYvNvOWDS615hSndLWA3qrK0xhJxnLtvor5FJnpkW63Wj-iQnJ96TwLM_pDCDNA2JF7__z-2L_GTUT_vgBKM32p9t_dJOPuSEw/s1600/20240421_203535.png"
 ---
 
+
 <p>When it comes to taking care of your skin, cleansing is a crucial step in maintaining a healthy complexion. However, there are certain skin-cleansing habits that dermatologists want you to stop doing in order to prevent damage and irritation to your skin. In this article, we will discuss some common mistakes people make when it comes to cleansing their skin and provide tips on how to properly care for your skin.</p>
 <h2>Over-Exfoliating Your Skin</h2>
 <p>Exfoliation is an important part of any skincare routine, as it helps to remove dead skin cells and reveal a fresh, radiant complexion. However, over-exfoliating your skin can do more harm than good. Dermatologists recommend limiting exfoliation to 1-2 times per week, depending on your skin type. Excessive exfoliation can strip your skin of its natural oils, leading to dryness, irritation, and even breakouts.</p>
