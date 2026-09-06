@@ -24,6 +24,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -107,6 +108,7 @@ nav a:hover { color: var(--primary); }
     margin: 2rem auto;
     padding: 0 20px;
     flex: 1;
+    width: 100%;
 }
 
 .section-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
@@ -267,6 +269,7 @@ nav a:hover { color: var(--primary); }
     word-break: break-all;
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
+    overflow-x: auto;
 }
 
 /* Content */
@@ -344,14 +347,90 @@ footer {
     font-size: 0.85rem;
 }
 
-/* Responsive */
+/* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
     .hero h1 { font-size: 1.5rem; }
-    nav { gap: 1rem; }
+    .hero p { font-size: 1rem; }
+    
+    nav { 
+        gap: 1rem; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     nav a { font-size: 0.8rem; }
-    .tools-grid { grid-template-columns: 1fr; }
+    
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .tools-grid { 
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+    
+    .features-section { 
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+        padding: 0 16px;
+    }
+    
+    .feature-card { padding: 1.5rem; }
+    .feature-icon { font-size: 2rem; }
+    
     .tool-page h1 { font-size: 1.5rem; }
-    .stats { grid-template-columns: repeat(2, 1fr); }
+    
+    .stats { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px;
+    }
+    
+    .stat-number { font-size: 1.5rem; }
+    
+    .tool-box { padding: 1rem; }
+    
+    .btn { 
+        padding: 0.6rem 1rem; 
+        font-size: 0.8rem; 
+        white-space: nowrap;
+    }
+    
     .logo { font-size: 1.1rem; }
     .logo-icon { width: 35px; height: 35px; font-size: 1rem; }
+    
+    .related-tools { grid-template-columns: 1fr; }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .content-section { padding: 1rem; }
+    
+    .output-box { 
+        font-size: 0.8rem; 
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero { padding: 2rem 12px; }
+    .hero h1 { font-size: 1.3rem; }
+    
+    .tools-section { padding: 0 12px; }
+    .tool-page { padding: 0 12px; }
+    
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat-number { font-size: 1.3rem; }
+    .stat-label { font-size: 0.65rem; }
+    
+    .btn { 
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tool-card { padding: 1rem; }
+    .tool-icon { width: 40px; height: 40px; font-size: 1.2rem; }
 }
