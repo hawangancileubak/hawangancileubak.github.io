@@ -1,7 +1,3 @@
-/* ============================================
-   DYNAMIC STYLESHEET - FULL & FIXED
-   ============================================ */
-
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
@@ -31,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== HEADER ===== */
+/* Header */
 header {
     background: var(--header-bg);
     border-bottom: 1px solid var(--border);
@@ -39,18 +35,15 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
 .logo {
@@ -73,15 +66,9 @@ header {
     justify-content: center;
     color: white;
     font-size: 1.2rem;
-    flex-shrink: 0;
 }
 
-nav { 
-    display: flex; 
-    gap: 1.5rem; 
-    align-items: center; 
-    flex-wrap: wrap;
-}
+nav { display: flex; gap: 1.5rem; align-items: center; }
 
 nav a {
     text-decoration: none;
@@ -89,48 +76,37 @@ nav a {
     font-size: 0.9rem;
     font-weight: 500;
     transition: color 0.3s;
-    white-space: nowrap;
 }
 
 nav a:hover { color: var(--primary); }
 
-/* ===== BREADCRUMB ===== */
+/* Breadcrumb */
 .breadcrumb {
     max-width: 1200px;
     margin: 1rem auto;
-    padding: 0 16px;
+    padding: 0 20px;
     font-size: 0.85rem;
     color: var(--text-light);
 }
 
 .breadcrumb a { color: var(--primary); text-decoration: none; }
 
-/* ===== HERO ===== */
+/* Hero */
 .hero {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
-    padding: 3rem 16px;
+    padding: 3rem 20px;
     text-align: center;
 }
 
-.hero h1 { 
-    font-size: 2rem; 
-    margin-bottom: 0.5rem; 
-    word-wrap: break-word;
-}
+.hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.hero p { font-size: 1.1rem; opacity: 0.95; }
 
-.hero p { 
-    font-size: 1.1rem; 
-    opacity: 0.95; 
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* ===== TOOLS GRID ===== */
+/* Tools Grid */
 .tools-section {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 16px;
+    padding: 0 20px;
     flex: 1;
     width: 100%;
 }
@@ -170,17 +146,17 @@ nav a:hover { color: var(--primary); }
     margin-bottom: 1rem;
 }
 
-.tool-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; word-wrap: break-word; }
+.tool-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
 .tool-card p { font-size: 0.85rem; color: var(--text-light); }
 
-/* ===== FEATURES ===== */
+/* Features */
 .features-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto 2rem;
-    padding: 0 16px;
+    padding: 0 20px;
 }
 
 .feature-card {
@@ -192,23 +168,19 @@ nav a:hover { color: var(--primary); }
 }
 
 .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-.feature-card h3 { margin-bottom: 0.5rem; word-wrap: break-word; }
+.feature-card h3 { margin-bottom: 0.5rem; }
 .feature-card p { color: var(--text-light); font-size: 0.9rem; }
 
-/* ===== TOOL PAGE ===== */
+/* Tool Page */
 .tool-page {
     max-width: 900px;
     margin: 2rem auto;
-    padding: 0 16px;
+    padding: 0 20px;
     flex: 1;
     width: 100%;
 }
 
-.tool-page h1 { 
-    font-size: 1.8rem; 
-    margin-bottom: 0.5rem; 
-    word-wrap: break-word;
-}
+.tool-page h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
 
 .tool-intro {
     color: var(--text-light);
@@ -221,7 +193,6 @@ nav a:hover { color: var(--primary); }
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    overflow: hidden;
 }
 
 .tool-box textarea {
@@ -260,7 +231,6 @@ nav a:hover { color: var(--primary); }
     font-weight: 600;
     transition: all 0.3s;
     display: inline-block;
-    white-space: nowrap;
 }
 
 .btn-primary { background: var(--primary); color: white; }
@@ -268,7 +238,7 @@ nav a:hover { color: var(--primary); }
 .btn-secondary { background: var(--border); color: var(--text); }
 .btn-copy { background: var(--success); color: white; }
 
-/* ===== STATS ===== */
+/* Stats */
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -284,10 +254,10 @@ nav a:hover { color: var(--primary); }
     text-align: center;
 }
 
-.stat-number { font-size: 1.8rem; font-weight: bold; color: var(--primary); word-break: break-all; }
+.stat-number { font-size: 1.8rem; font-weight: bold; color: var(--primary); }
 .stat-label { font-size: 0.75rem; color: var(--text-light); text-transform: uppercase; }
 
-/* ===== OUTPUT ===== */
+/* Output */
 .output-box {
     background: #f1f5f9;
     border: 1px solid var(--border);
@@ -302,7 +272,7 @@ nav a:hover { color: var(--primary); }
     overflow-x: auto;
 }
 
-/* ===== CONTENT ===== */
+/* Content */
 .content-section {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -311,17 +281,13 @@ nav a:hover { color: var(--primary); }
     margin-bottom: 1.5rem;
 }
 
-.content-section h2 { font-size: 1.3rem; margin-bottom: 0.8rem; word-wrap: break-word; }
-.content-section h3 { font-size: 1.1rem; margin: 0.8rem 0 0.4rem; word-wrap: break-word; }
-.content-section p { color: var(--text-light); margin-bottom: 0.8rem; word-wrap: break-word; }
+.content-section h2 { font-size: 1.3rem; margin-bottom: 0.8rem; }
+.content-section h3 { font-size: 1.1rem; margin: 0.8rem 0 0.4rem; }
+.content-section p { color: var(--text-light); margin-bottom: 0.8rem; }
 .content-section ol, .content-section ul { padding-left: 1.5rem; color: var(--text-light); }
 .content-section li { margin-bottom: 0.3rem; }
 
-/* ===== FAQ ===== */
-.faq-item { margin-bottom: 1.5rem; }
-.faq-item h3 { color: var(--text); }
-
-/* ===== RELATED ===== */
+/* Related */
 .related-tools {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -338,25 +304,23 @@ nav a:hover { color: var(--primary); }
     color: var(--text);
     text-align: center;
     transition: all 0.3s;
-    word-wrap: break-word;
 }
 
 .related-tool:hover { border-color: var(--primary); }
 
-/* ===== AD ===== */
+/* Ad */
 .ad-container {
     max-width: 1200px;
     margin: 1rem auto;
-    padding: 0 16px;
+    padding: 0 20px;
     text-align: center;
-    overflow: hidden;
 }
 
-/* ===== FOOTER ===== */
+/* Footer */
 footer {
     background: var(--footer-bg);
     color: white;
-    padding: 2rem 16px;
+    padding: 2rem 20px;
     margin-top: auto;
 }
 
@@ -368,7 +332,7 @@ footer {
     gap: 1.5rem;
 }
 
-.footer-section h4 { margin-bottom: 0.8rem; font-size: 1rem; word-wrap: break-word; }
+.footer-section h4 { margin-bottom: 0.8rem; font-size: 1rem; }
 .footer-section ul { list-style: none; }
 .footer-section ul li { margin-bottom: 0.4rem; }
 .footer-section a { color: var(--footer-text); text-decoration: none; }
@@ -383,17 +347,14 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ============================================
-   RESPONSIVE - MOBILE FRIENDLY
-   ============================================ */
-
+/* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
     .hero h1 { font-size: 1.5rem; }
     .hero p { font-size: 1rem; }
     
     nav { 
-        gap: 0.8rem; 
-        width: 100%;
+        gap: 1rem; 
+        flex-wrap: wrap;
         justify-content: center;
     }
     nav a { font-size: 0.8rem; }
@@ -432,14 +393,13 @@ footer {
     .btn { 
         padding: 0.6rem 1rem; 
         font-size: 0.8rem; 
+        white-space: nowrap;
     }
     
     .logo { font-size: 1.1rem; }
     .logo-icon { width: 35px; height: 35px; font-size: 1rem; }
     
-    .related-tools { 
-        grid-template-columns: 1fr; 
-    }
+    .related-tools { grid-template-columns: 1fr; }
     
     .footer-container {
         grid-template-columns: 1fr;
@@ -448,13 +408,15 @@ footer {
     
     .content-section { padding: 1rem; }
     
-    .output-box { font-size: 0.8rem; }
+    .output-box { 
+        font-size: 0.8rem; 
+        overflow-x: auto;
+    }
 }
 
 @media (max-width: 480px) {
     .hero { padding: 2rem 12px; }
     .hero h1 { font-size: 1.3rem; }
-    .hero p { font-size: 0.9rem; }
     
     .tools-section { padding: 0 12px; }
     .tool-page { padding: 0 12px; }
@@ -464,10 +426,9 @@ footer {
     .stat-label { font-size: 0.65rem; }
     
     .btn { 
-        padding: 0.5rem 0.8rem; 
-        font-size: 0.75rem;
-        width: 100%;
+        width: 100%; 
         text-align: center;
+        margin-bottom: 0.5rem;
     }
     
     .tool-card { padding: 1rem; }
